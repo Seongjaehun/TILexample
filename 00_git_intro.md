@@ -103,5 +103,19 @@ $ git log --oneline # 커밋 목록 한 줄로 보기
 
 
 
+---
+
+## Git에 업로드하기
+
+```bash
+git remote add origin https://github.com/Seongjaehun/TIL.git
+# 해당 주소를 origin이라는 원격 저장소에 add
+
+git push -u origin master
+# master를 origin에 push하여 Git에 업로드
+```
+
+
+
 
 
