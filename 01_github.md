@@ -41,7 +41,7 @@ origin  https://github.com/Seongjaehun/TIL.git (push)
 ## 원격 저장소에 업로드 (push)
 
 ```bash
-git push -u origin master
+$ git push -u origin master
 ```
 
 > "git아, push 해줘 origin이라는 이름의 원격저장소에 master 브랜치로!"
@@ -49,4 +49,32 @@ git push -u origin master
 > **원격 저장소에는 commit이 올라간다.**
 >
 > 즉, commit 이력이 없다면 push 할 수 없으며, commit 이력에 있는 대상만 올라감
+
+<br>
+
+## pull
+
+- 원격 저장소의 변경사항을 받아옴 (업데이트)
+
+```bash
+$ git pull origin master
+```
+
+<br>
+
+## clone
+
+```bash
+$ git pull origin master # 깃허브에서 수정했을 경우, 그 수정한 것만 가져올 때
+```
+
+```bash
+$ git clone 저장소URL 
+
+# 로컬 저장소로 원격 저장소에 있는 내용을 싹 다 가져올 때. 이 경우 자동 init 되기 때문에 따로 init 해줄 필요 없음
+```
+
+> [주의사항]
+>
+> clone 받은 프로젝트는 이미 `git init`이 되어있음. (`remote`도 추가되어 있음)
 
